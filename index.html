@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Contato</title>
+    <link rel="stylesheet" href="/Códigos/FormularioContato/index.css">
+</head>
+
+<body>
+    <!-- Bloco Inicial -->
+    <header>
+        <h1>Formulário de Contato</h1>
+    </header>
+<br>
+        <form action="/submit" method="POST">
+        <div class="div-1">
+            <!--Nome--> 
+            <label for="name"> Nome: <br></label>
+            <input type="text"
+                placeholder="Digite o nome"
+                required>
+        </div>
+
+            <br>
+
+        <div class="div-2">
+            <!--E-Mail-->
+            <label for="name"> E-mail: <br></label>
+            <input type="email"
+            placeholder="Digite o nome"
+            required>
+        </div>
+
+            <br>
+
+        <div class="div-3">
+            <!--Texto Adicional-->
+            <label for="name"> Texto Adicional (opcional): <br></label>
+            <textarea name="Texto Adicional" cols="30" rows="4"></textarea>
+        </div>
+        <button type="submit"> Enviar</button>
+        </form>
+</body>
+
+</html>
+
+<style>
+*{
+    font-family: sans-serif;
+}
+body{
+    background-color: #f8ecfc;
+}
+
+input, textarea{
+font: 1em;
+
+width: 300px;
+box-sizing: border-box;
+
+input:focus, textarea:focus {
+border-color: #000;}
+}
+
+header{
+    height: 75px;
+    width: 500px;
+    background-color: #ffffff;
+    border: 2px solid #e9e3eb;
+    border-radius: 10px;
+    margin: auto;
+    h1{
+        text-align: center;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        margin: auto;
+        padding-top: 18px;
+    }
+}
+form{
+    padding-top: 30px;
+    padding-left: 30px;
+    margin: 0 auto;
+    height: 260px;
+    width: 470px;
+    background-color: #ffffff;
+    border: 2px solid #e9e3eb;
+    border-radius: 10px;
+}
+button{
+    margin-top: 10px;
+}
+</style>
